@@ -1,0 +1,18 @@
+# ---------------------------------------------------------------------------
+# RUNTIME dependencies for the Streamlit app ONLY.
+# This is the only file Streamlit Community Cloud installs.
+# Training-only packages (scikit-learn, matplotlib) live in requirements-train.txt
+# and are never installed on the deployment.
+#
+# Verified on Python 3.12.10 (Windows 10) with:
+#   streamlit 1.66.1 - tensorflow-cpu 2.21.0 - numpy 2.5.4 - pillow 13.0.0
+# ---------------------------------------------------------------------------
+streamlit>=1.50,<2
+
+# CPU-only build: same code as 'tensorflow', ~200 MB smaller, no GPU drivers needed.
+# Pinned because the .keras model file is saved by this Keras 3.x version;
+# train and deploy with the same major version so the model always loads.
+tensorflow-cpu==2.21.0
+
+numpy>=1.26,<3
+pillow>=10,<14

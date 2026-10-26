@@ -1,0 +1,23 @@
+{
+  "test_accuracy": 0.9605263157894737,
+  "macro_f1": 0.9608660347501043,
+  "weighted_f1": 0.9606588485481793,
+  "phase1_val_accuracy": 0.9271523356437683,
+  "selected_phase": "fine_tuned",
+  "num_classes": 5,
+  "split_sizes": {
+    "train": 704,
+    "val": 151,
+    "test": 152
+  },
+  "duplicates_removed": 0,
+  "img_size": 224,
+  "epochs_run": [
+    8,
+    9
+  ],
+  "seed": 42,
+  "weights": "imagenet",
+  "trained_at": "2026-10-25 23:57:17",
+  "train_minutes": 6.5
+}

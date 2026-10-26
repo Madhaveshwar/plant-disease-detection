@@ -1,0 +1,26 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+
+# Dataset archives and raw dataset
+BPLD Dataset.zip
+BPLD Dataset/
+data/
+
+# Temporary logs and generated report files
+*.log
+report_temp.html
+*_backup.md
+build_docx_part1.py
+capture_and_test.py
+eval_only.py
+finalize_report.py
+generate_report*.py
+gen_report_part*.py
+inject_toc_field.py
+insert_images.py
+make_diagrams.py
+render_diagrams.py
+render_diagrams_cli.js
